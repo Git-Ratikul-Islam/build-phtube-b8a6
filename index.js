@@ -24,10 +24,10 @@ const handleLoadVideos = async (categoryID) => {
       data.data.forEach((videos) => {
             const div = document.createElement("div");
             div.innerHTML = `
-         <div class="mx-auto mt-10 w-96 ">
+         <div class=" mx-auto mt-10 w-96 ">
             <figure><img class="h-[200px] w-[500px] rounded-lg" src=${videos.thumbnail} />
             </figure>
-            <div class="mt-5  flex flex-row items-center mr-32">
+            <div class="mt-5 flex flex-row items-center mr-32">
                   <div>
                         <div class="avatar">
                               <div class="w-12 rounded-full">
@@ -46,8 +46,9 @@ const handleLoadVideos = async (categoryID) => {
                         <p text-[#171717B3]>${videos?.authors[0]?.profile_name}</p>
                   </div>
                   <div>
-                 
-                       
+               
+                  ${videos?.authors[0]?.verified === true ? '<img class="pt-[2px]" src="/fi_10629607.svg">' : ''}
+                  
                   </div>
             </div>
             <p class="ml-[67px] text-[#171717B3]">${videos?.others?.views} views</p>
@@ -55,10 +56,16 @@ const handleLoadVideos = async (categoryID) => {
       </div> 
             
             `;
-            cardContainer.appendChild(div);
-      });
-};
 
+            cardContainer.appendChild(div);
+
+
+
+
+      });
+
+
+};
 
 
 
@@ -66,5 +73,6 @@ const handleLoadVideos = async (categoryID) => {
 
 tabContainerClick();
 handleLoadVideos(1000);
+
 
 
