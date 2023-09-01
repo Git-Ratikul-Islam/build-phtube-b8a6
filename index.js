@@ -57,17 +57,22 @@ const handleLoadVideos = async (categoryID) => {
             
             `;
 
+
+
             cardContainer.appendChild(div);
 
-
-
-
       });
+      if (data.data.length === 0) {
+            const errorContainer = document.getElementById("error-img-text");
+            errorContainer.classList.remove("hidden");
+      } else {
+            const errorContainer = document.getElementById("error-img-text");
+            errorContainer.classList.add("hidden");
 
+
+      }
 
 };
-
-
 
 
 
