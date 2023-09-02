@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Blog</title>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+      <!-- <section class="bg-white dark:bg-gray-900 grid grid-cols-2 h-[100vh]">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+
+                  <div class="grid gap-8 lg:grid-cols-2">
+                        <article
+                              class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                              <h2 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white"><a
+                                          href="#">VAR</a></h2>
+                              <p class="mb-5 font-light text-gray-500 dark:text-gray-400">var declarations have
+                                    function-level scope, which means they are only accessible within the function
+                                    in which they are defined.
+                                    If a var is defined inside a function, it cannot be accessed outside of that
+                                    function.
+                                    However, if a var is defined outside of any function, it becomes a global variable
+                                    and can be accessed
+                                    from anywhere in the script.
+                                    var declarations are also hoisted, which means they are moved to the top of their
+                                    containing function
+                                    or global scope during compilation. This can sometimes lead to unexpected behavior.
+                              </p>
+                  </div>
+                  </article>
+
+            </div>
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+
+                  <div class="grid gap-8 lg:grid-cols-2">
+                        <article
+                              class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                              <h2 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white"><a
+                                          href="#">VAR</a></h2>
+                              <p class="mb-5 font-light text-gray-500 dark:text-gray-400">var declarations have
+                                    function-level scope, which means they are only accessible within the function
+                                    in which they are defined.
+                                    If a var is defined inside a function, it cannot be accessed outside of that
+                                    function.
+                                    However, if a var is defined outside of any function, it becomes a global variable
+                                    and can be accessed
+                                    from anywhere in the script.
+                                    var declarations are also hoisted, which means they are moved to the top of their
+                                    containing function
+                                    or global scope during compilation. This can sometimes lead to unexpected behavior.
+                              </p>
+                  </div>
+                  </article>
+
+            </div>
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+
+                  <div class="grid gap-8 lg:grid-cols-2">
+                        <article
+                              class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                              <h2 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white"><a
+                                          href="#">VAR</a></h2>
+                              <p class="mb-5 font-light text-gray-500 dark:text-gray-400">var declarations have
+                                    function-level scope, which means they are only accessible within the function
+                                    in which they are defined.
+                                    If a var is defined inside a function, it cannot be accessed outside of that
+                                    function.
+                                    However, if a var is defined outside of any function, it becomes a global variable
+                                    and can be accessed
+                                    from anywhere in the script.
+                                    var declarations are also hoisted, which means they are moved to the top of their
+                                    containing function
+                                    or global scope during compilation. This can sometimes lead to unexpected behavior.
+                              </p>
+
+
+                  </div>
+                  </article>
+
+            </div>
+
+      </section> -->
+
+      <div class=" grid grid-cols-3 justify-center gap-5">
+            <div class="card w-[600px] bg-base-100 shadow-xl">
+                  <div class="card-body">
+                        <h2 class="card-title">VAR</h2>
+                        <p>var declarations have function-level scope, which means they are only accessible within the
+                              function in which they are defined.
+                              If a var is defined inside a function, it cannot be accessed outside of that function.
+                              However, if a var is defined outside of any function, it becomes a global variable and can
+                              be
+                              accessed from anywhere in the script.
+                              var declarations are also hoisted, which means they are moved to the top of their
+                              containing
+                              function or global scope during compilation. This can sometimes lead to unexpected
+                              behavior.</p>
+
+                  </div>
+            </div>
+            <div class="card w-[600px] bg-base-100 shadow-xl">
+                  <div class="card-body">
+                        <h2 class="card-title">LET</h2>
+                        <p>let declarations have block-level scope, which means they are only accessible within the
+                              block (e.g., inside a loop or if statement) in which they are defined.
+                              Variables declared with let are not hoisted to the top of their containing block, so they
+                              are only accessible after they have been declared.
+                              This block-level scope provides better control and helps prevent unintended variable
+                              redeclarations or modifications outside of the intended block.</p>
+
+                  </div>
+            </div>
+            <div class="card w-[600px] bg-base-100 shadow-xl">
+                  <div class="card-body">
+                        <h2 class="card-title">CONST</h2>
+                        <p>const declarations also have block-level scope, just like let.
+                              However, const variables are meant to be constant. Once assigned a value, they cannot be
+                              reassigned to a different value.
+                              This makes const useful for declaring variables that should remain unchanged throughout
+                              their scope.
+                              It's important to note that while the value of a const variable is immutable, the object
+                              it references can still be modified.</p>
+
+                  </div>
+            </div>
+
+      </div>
+      <div class=" grid grid-cols-3 justify-center gap-5 mt-10">
+            <div class="card w-[600px] bg-base-100 shadow-xl">
+                  <div class="card-body">
+                        <h2 class="card-title">null</h2>
+                        <p>null is explicitly assigned to a variable or used as a value to indicate that the variable
+                              intentionally does not have a value or an object reference.
+                              It is often used when you want to represent the absence of a value or the idea that a
+                              variable should have no value.
+                              Common use cases for null include:
+                              Initializing a variable that is expected to hold an object or value later in the code.
+                              Indicating that an object property intentionally has no value.
+                              Checking if a function or operation returned a meaningful result or encountered an error.
+                        </p>
+
+                  </div>
+            </div>
+            <div class="card w-[600px] bg-base-100 shadow-xl">
+                  <div class="card-body">
+                        <h2 class="card-title">undefined</h2>
+                        <p>undefined typically represents a variable or object property that has been declared but has
+                              not been assigned any value.
+                              It can also be the default return value of a function that doesn't explicitly return
+                              anything.
+                              Use cases for undefined include:
+                              Variables that have been declared but not initialized.
+                              Function parameters that have not been provided with a value.
+                              Accessing object properties that do not exist.</p>
+
+                  </div>
+            </div>
+            <div class="card w-[600px] bg-base-100 shadow-xl">
+                  <div class="card-body">
+                        <h2 class="card-title">What do i mean by rest API</h2>
+                        <p>
+                              A REST API (Representational State Transfer Application Programming Interface) is a set of
+                              rules and principles for creating web services. It emphasizes statelessness, using HTTP
+                              methods like GET, POST, PUT, and DELETE to perform actions on resources identified by
+                              URLs. Resources can have different representations, such as JSON or XML. REST APIs are
+                              widely used for building web services that can be accessed by various clients, enabling
+                              scalable and interoperable communication over the internet. They promote a uniform and
+                              structured approach to designing APIs, making them a popular choice for developing modern,
+                              distributed systems and enabling interaction between different software applications.</p>
+
+                  </div>
+            </div>
+
+      </div>
+
+      <div class=" text-center mt-9">
+            <button onclick="window.location.href = 'http://127.0.0.1:5500/index.html';"
+                  class=" bg-slate-100 btn ">HOME</button>
+      </div>
+
+
+
+</body>
+
+</html>
